@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3da04d1d.chunk.css",
+    "main.js": "/static/js/main.cfa6716d.chunk.js",
+    "main.js.map": "/static/js/main.cfa6716d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c8f6c182.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c8f6c182.js.map",
+    "static/js/2.26da0d87.chunk.js": "/static/js/2.26da0d87.chunk.js",
+    "static/js/2.26da0d87.chunk.js.map": "/static/js/2.26da0d87.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.511ddc069a8d92ccfb336cb9d74852dd.js": "/precache-manifest.511ddc069a8d92ccfb336cb9d74852dd.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.3da04d1d.chunk.css.map": "/static/css/main.3da04d1d.chunk.css.map",
+    "static/js/2.26da0d87.chunk.js.LICENSE.txt": "/static/js/2.26da0d87.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/static/media/bg.049224cb.jpg",
+    "static/media/chara0.png": "/static/media/chara0.9985e923.png",
+    "static/media/neteruyaro.m4a": "/static/media/neteruyaro.81591175.m4a",
+    "static/media/omurice.m4a": "/static/media/omurice.297cb345.m4a",
+    "static/media/sugoiyan.m4a": "/static/media/sugoiyan.3ac796ab.m4a"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c8f6c182.js",
+    "static/js/2.26da0d87.chunk.js",
+    "static/css/main.3da04d1d.chunk.css",
+    "static/js/main.cfa6716d.chunk.js"
+  ]
+}
