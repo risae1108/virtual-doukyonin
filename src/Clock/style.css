@@ -1,0 +1,22 @@
+.clock{
+  font-family: "Roboto";
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: transparent;
+  transition: .5s
+}
+
+h1{
+  font-size: 7em;
+  cursor: pointer;
+  transition: .2s;
+}
+            
+            
+.faded {
+  opacity: 0;
+}
