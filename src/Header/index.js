@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './style.css';
+import Logo from '../../src/img/logo.png';
 
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -41,13 +42,13 @@ class Header extends Component {
   render() {
     return (
       <div className="root">
-        <AppBar position="static">
+        <AppBar position="static" color="#fff">
           <Toolbar>
             <IconButton edge="start" className="menuButton" color="inherit" aria-label="menu">
               <MenuIcon />
             </IconButton>
             <Typography variant="h6" className="title">
-              <p>みまもりさん</p>
+              <img src={Logo} height="70"/>
             </Typography>
             <Button color="inherit">
               <p>{this.state.userName}</p></Button>

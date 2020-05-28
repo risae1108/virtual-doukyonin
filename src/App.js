@@ -2,10 +2,14 @@ import React, {Component} from 'react'
 import Header from './Header';
 import Clock from './Clock';
 import Character from '../src/img/chara0.png';
+import Voice0 from '../src/voice/sugoiyan.m4a';
+import Voice1 from '../src/voice/omurice.m4a';
+import Voice2 from '../src/voice/neteruyaro.m4a';
 import './App.css';
+import './audioplayer.css'
 
-import ReactAudioPlayer from 'react-audio-player';
 import axios from 'axios';
+import AudioPlayer from 'react-h5-audio-player';
 
 class App extends Component {
   constructor(props) {
@@ -57,27 +61,70 @@ class App extends Component {
         <div className="home-wrapper">
           <div className="comment-div">
             <div className="comment-text balloon1">
-              {this.state.userStatus==0 && (
-                <p>
-                {this.state.userName}さん、お仕事がんばっていますね！
-                <br/>
-                そろそろ休憩しておやつでも食べませんか？
-                </p>
+            {this.state.userStatus==0 && (
+              <div>
+                <p>{this.state.userName}さん！ お仕事頑張っててすごいです〜！</p>
+                <div className="voice-div">
+                  <AudioPlayer
+                    src={Voice0}
+                    customVolumeControls={[]}
+                    customAdditionalControls={[]}
+                    customProgressBarSection={[]}
+                    showJumpControls={false}
+                    showFilledProgress={false}
+                    // other props here
+                  />
+                </div>
+              </div>
               )}
               {this.state.userStatus==1 && (
-                <p>
-                {this.state.userName}さん、今日もお疲れさまでした！
-                <br/>ゆっくり休んでくださいね</p>
+              <div>
+                <p>{this.state.userName}さん、ゆっくり休んでくださいね。</p>
+                <div className="voice-div">
+                  <AudioPlayer
+                    src={Voice1}
+                    customVolumeControls={[]}
+                    customAdditionalControls={[]}
+                    customProgressBarSection={[]}
+                    showJumpControls={false}
+                    showFilledProgress={false}
+                    // other props here
+                  />
+                </div>
+              </div>
               )}
               {this.state.userStatus==2 && (
+              <div>
                 <p>もしかして、{this.state.userName}さん机の上で寝ちゃってますか…？</p>
-
+                <div className="voice-div">
+                  <AudioPlayer
+                    src={Voice2}
+                    customVolumeControls={[]}
+                    customAdditionalControls={[]}
+                    customProgressBarSection={[]}
+                    showJumpControls={false}
+                    showFilledProgress={false}
+                    // other props here
+                  />
+                </div>
+              </div>
               )}
-              <ReactAudioPlayer
-                src="../src/voice/ganbare.ogg"
-                autoPlay
-                controls
-              />
+              {this.state.userStatus==3 && (
+              <div>
+                <p>もしかして、{this.state.userName}さん机の上で寝ちゃってますか…？</p>
+                <div className="voice-div">
+                <AudioPlayer
+                  src={Voice2}
+                  customVolumeControls={[]}
+                  customAdditionalControls={[]}
+                  customProgressBarSection={[]}
+                  showJumpControls={false}
+                  showFilledProgress={false}
+                  // other props here
+                />
+                </div>
+              </div>
+              )}
             </div>
           </div>
           <div className="chara-div">
@@ -111,11 +158,6 @@ class App extends Component {
                 <p>もしかして、{this.state.userName}さん机の上で寝ちゃってますか…？</p>
 
               )}
-              <ReactAudioPlayer
-                src="../src/voice/ganbare.ogg"
-                autoPlay
-                controls
-              />
             </div>
           </div>
           <div className="date-div">
