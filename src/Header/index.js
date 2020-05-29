@@ -15,7 +15,7 @@ class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      userName: "あ",
+      userName: "Kimura",
       userStatus: 0
     }
   }

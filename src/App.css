@@ -29,7 +29,7 @@ p {
 
 .zoom-chara-div {
   position: absolute;
-  top: -20px;
+  top: -50px;
   left: 300px;
 }
 
@@ -52,7 +52,7 @@ p {
 
 .comment-div {
   position: absolute;
-  top: 100px;
+  top: 300px;
   right: 600px;
 }
 
@@ -64,6 +64,7 @@ p {
   min-width: 120px;
   max-width: 100%;
   background: #e0edff;
+  border: solid 3px #555;
   border-radius: 15px;
 }
 
@@ -73,7 +74,7 @@ p {
   top: 50%;
   left: 100%;
   margin-top: -15px;
-  border: 15px solid transparent;
+  border: 12px solid transparent;
   border-left: 15px solid #e0edff;
 }
 
@@ -84,3 +85,17 @@ p {
   font-size: 30px;
   font-weight: bold;
 }
+
+.button-div {
+  position: absolute;
+  z-index:10;
+  width: 450px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(200, 200,200, 0.7);
+  border-radius: 10px;
+}
+
+.button-div p{
+  margin-bottom: 10px;
+} 
