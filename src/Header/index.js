@@ -15,11 +15,12 @@ class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      userName: "Kimura",
+      userName: "risae",
       userStatus: 0
     }
   }
 
+  /*
   async get_json() {
     const api = axios.create();
     try {
@@ -38,6 +39,7 @@ class Header extends Component {
   componentDidMount(){
     this.get_json()
   }
+  */
 
   render() {
     return (

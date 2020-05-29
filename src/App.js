@@ -17,13 +17,12 @@ import './audioplayer.css'
 import axios from 'axios';
 import AudioPlayer from 'react-h5-audio-player';
 import Button from '@material-ui/core/Button';
-import { spacing } from '@material-ui/system';
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      userName: "kimura",
+      userName: "risae",
       userStatus: 0,
       zoom: false,
       chara0: false
@@ -46,6 +45,7 @@ class App extends Component {
     })
   }
 
+  /*
   async get_json() {
     const api = axios.create();
     try {
@@ -64,7 +64,7 @@ class App extends Component {
   componentDidMount(){
     this.get_json()
   }
-
+  */
 
   render() {
     return (
