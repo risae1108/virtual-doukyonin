@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/virtual-doukyonin/precache-manifest.7e7f46659e1a0074cf6c187a054acccd.js"
+  "/virtual-doukyonin/precache-manifest.bc4187303806f364ea03e5ae5e9ea68d.js"
 );
 
 self.addEventListener('message', (event) => {
